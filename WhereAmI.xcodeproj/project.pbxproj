@@ -20,6 +20,9 @@
 		87A271D01896F6E2008F92A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A271B11896F6E1008F92A6 /* Foundation.framework */; };
 		87A271D81896F6E2008F92A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87A271D61896F6E2008F92A6 /* InfoPlist.strings */; };
 		87A271DB1896F6E2008F92A6 /* WhereAmITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A271DA1896F6E2008F92A6 /* WhereAmITests.m */; };
+		87A271E51896F76B008F92A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A271E41896F76B008F92A6 /* CoreLocation.framework */; };
+		87CBFDD51899901A00C4C5EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CBFDD41899901A00C4C5EC /* MapKit.framework */; };
+		87CBFDD918999BA600C4C5EC /* BNRMappoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CBFDD818999BA600C4C5EC /* BNRMappoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,10 @@
 		87A271D71896F6E2008F92A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		87A271D91896F6E2008F92A6 /* WhereAmITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhereAmITests.h; sourceTree = "<group>"; };
 		87A271DA1896F6E2008F92A6 /* WhereAmITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereAmITests.m; sourceTree = "<group>"; };
+		87A271E41896F76B008F92A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		87CBFDD41899901A00C4C5EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		87CBFDD718999BA600C4C5EC /* BNRMappoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMappoint.h; sourceTree = "<group>"; };
+		87CBFDD818999BA600C4C5EC /* BNRMappoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMappoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CBFDD51899901A00C4C5EC /* MapKit.framework in Frameworks */,
+				87A271E51896F76B008F92A6 /* CoreLocation.framework in Frameworks */,
 				87A271B01896F6E1008F92A6 /* UIKit.framework in Frameworks */,
 				87A271B21896F6E1008F92A6 /* Foundation.framework in Frameworks */,
 				87A271B41896F6E1008F92A6 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +90,8 @@
 		87A271A01896F6E1008F92A6 = {
 			isa = PBXGroup;
 			children = (
+				87CBFDD41899901A00C4C5EC /* MapKit.framework */,
+				87A271E41896F76B008F92A6 /* CoreLocation.framework */,
 				87A271B51896F6E1008F92A6 /* WhereAmI */,
 				87A271D31896F6E2008F92A6 /* WhereAmITests */,
 				87A271AE1896F6E1008F92A6 /* Frameworks */,
@@ -116,6 +127,8 @@
 				87A271C11896F6E2008F92A6 /* MainStoryboard.storyboard */,
 				87A271C41896F6E2008F92A6 /* WhrereAmIViewController.h */,
 				87A271C51896F6E2008F92A6 /* WhrereAmIViewController.m */,
+				87CBFDD718999BA600C4C5EC /* BNRMappoint.h */,
+				87CBFDD818999BA600C4C5EC /* BNRMappoint.m */,
 				87A271B61896F6E1008F92A6 /* Supporting Files */,
 			);
 			path = WhereAmI;
@@ -262,6 +275,7 @@
 				87A271BC1896F6E2008F92A6 /* main.m in Sources */,
 				87A271C01896F6E2008F92A6 /* WhrereAmIAppDelegate.m in Sources */,
 				87A271C61896F6E2008F92A6 /* WhrereAmIViewController.m in Sources */,
+				87CBFDD918999BA600C4C5EC /* BNRMappoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +449,7 @@
 				87A271E01896F6E2008F92A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87A271E11896F6E2008F92A6 /* Build configuration list for PBXNativeTarget "WhereAmITests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +458,7 @@
 				87A271E31896F6E2008F92A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

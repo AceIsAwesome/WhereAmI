@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface WhrereAmIViewController : UIViewController
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+@interface WhrereAmIViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate> {
+    CLLocationManager *locationManager;
+    IBOutlet MKMapView *worldView;
+    IBOutlet UIActivityIndicatorView *activityIndicator;
+    IBOutlet UITextField *locationTitleField;
+}
 
 @end
